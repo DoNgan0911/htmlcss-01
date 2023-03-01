@@ -4,6 +4,10 @@
 :root{
     --primary-color:#0F1B4C;
 }
+html,
+body{
+    scroll-behavior: smooth;
+}
 html
 {
     font-size: 62.5%;
@@ -61,6 +65,8 @@ a{
     height: calc(100vh - 90px);
     /* dùng cho ảnh */
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .navbar{
@@ -98,10 +104,11 @@ a{
     text-decoration: underline;
 }
 
-.hero{
-    /* Tránh margin */
+
+/* .hero{
+     Tránh margin 
     padding-top: 130px;
-}
+} */
 .hero .sub-title{
     font-weight: 500;
     font-size: 1.8rem;
