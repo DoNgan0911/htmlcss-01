@@ -23,6 +23,7 @@ body{
     max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 10px;
 }
 a{
     text-decoration: none;
@@ -72,8 +73,26 @@ a{
 .navbar{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     /* padding-top: 38px; */
     padding: 12px 0;
+}
+.navbar .search{
+    display: block;
+    width: 500px;
+    height: 30px;
+    border-radius: 999px;
+    outline: none;
+    padding: 10px;
+    margin-left: 25px;
+    
+}
+.brand{
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 600;
+    color:black
+
 }
 .navbar ul{
     display: flex;
@@ -103,7 +122,47 @@ a{
 .navbar ul a:hover{
     text-decoration: underline;
 }
+.list-item{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    width: 80%;
+    margin-left: auto;
+}
+.list-item a{
+    font-size: 1.4rem;
+    color: black;
+    padding: 10px;
+}
+.list-item .sub-menu{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+}
 
+.list-item a:hover + .sub-menu  {
+    display: block;
+}
+.list-item .sub-menu li{
+    padding: 10px 50px 10px 5px;
+    background-color: #c8d9f3;
+    width: 170px;
+    border-bottom: 1px solid black;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart {
+    margin-left: auto;
+}
+ .img{
+    width: 30px;
+    height: 30px;
+}
 
 /* .hero{
      Tránh margin 
@@ -142,6 +201,7 @@ a{
     /* right: 65px; */
     right: calc( (100vw - 1110px) / 2 - 100px);
     bottom: 0;
+    width: 40%;
 }
 /* =============== CLIENTS =============== */
 .clients{
@@ -253,6 +313,10 @@ a{
 .guide-cta .btn{
     min-width: 170px;
 }
+.guide-item .icon{
+    width: 150px; height: 150px;
+    border-radius: 999px;
+}
 
 
 /* =============== FEATURED =============== */
@@ -336,10 +400,9 @@ a{
     font-size: 1.4rem;
     letter-spacing: 0.01em;
     color: #4D4D52;
-    margin-left: 8px;
 }
 .featured .item .icon{
-    margin-left: 23px;
+    margin-left: 5px;
 }
 .featured .item .icon:first-child
 {
@@ -374,7 +437,7 @@ a{
 }
 .stats .info .sub-title{
     font-weight: 600;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     line-height: 1.29;
     color: #000339;
     width: 269px;
@@ -524,11 +587,15 @@ a{
     right: 221px;
 }
 
+.active{
+    background-color: red;
+}
+
 /*=============== FOOTER =============== */
 .footer{
     margin-top: 55px;
-    padding: 50px 0 58px;
-    /* background-color: pink; */
+    padding: 50px 0 30px;
+    background-color: #e6f0ff;
 
 }
 .footer .row{
@@ -593,4 +660,7 @@ a{
     font-weight: 400;
     font-size: 1.4rem;
     color: #C2C2C2;
+}
+.footer .end{
+    font-size: 2rem;
 }
